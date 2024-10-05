@@ -34,7 +34,7 @@ import com.serdar.barchart.util.drawFilledBar
 import com.serdar.barchart.util.isTouched
 
 @Composable
-fun BarChart(
+fun BarChartContent(
     modifier: Modifier = Modifier,
     barChartData: List<BarChartData>,
     horizontalAxisLabelColor: Color = Color.Red,

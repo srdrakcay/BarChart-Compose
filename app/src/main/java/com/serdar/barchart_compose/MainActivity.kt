@@ -17,7 +17,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import com.serdar.barchart.data.BarChartData
-import com.serdar.barchart.ui.barchart.BarChart
+import com.serdar.barchart.ui.barchart.BarChartContent
 import com.serdar.barchart.ui.barchart.BarChartPositionDialog
 import com.serdar.barchart.util.getShortDayOfWeek
 import com.serdar.barchart_compose.ui.theme.BarChartComposeTheme
@@ -42,7 +42,7 @@ class MainActivity : ComponentActivity() {
                             )
                         )
                     }
-                    BarChart(modifier = Modifier.padding(innerPadding), barChartData = listOf(
+                    BarChartContent(modifier = Modifier.padding(innerPadding), barChartData = listOf(
                         BarChartData(
                             target = 300f,
                             completed = 220f,
